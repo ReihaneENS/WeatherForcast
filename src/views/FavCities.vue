@@ -1,13 +1,11 @@
 <template>
-$END$
+  <FavCitiesMain/>
 </template>
 
 <script>
+import FavCitiesMain from "@/components/FavCitiesMain";
 export default {
-name: "FavCities"
+  name: "FavCities",
+  components: {FavCitiesMain}
 }
 </script>
-
-<style scoped>
-
-</style>

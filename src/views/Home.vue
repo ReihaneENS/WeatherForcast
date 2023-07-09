@@ -1,13 +1,11 @@
 <template>
-
+  <HomeMain/>
 </template>
 
 <script>
+import HomeMain from "@/components/HomeMain";
 export default {
-  name: "Home"
+  name: "Home",
+  components: {HomeMain}
 }
 </script>
-
-<style scoped>
-
-</style>

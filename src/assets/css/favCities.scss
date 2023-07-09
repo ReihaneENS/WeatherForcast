@@ -1,0 +1,26 @@
+.fav-cities-wrapper{
+  background-color: var(--color-second);
+  min-height: 100vh;
+  .inner{
+    .card {
+      width: 48%;
+      border-color: var(--color-first);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  .title{
+    h1{
+      animation-name: title;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+@keyframes title {
+  0%{
+    letter-spacing: 20px;
+  }
+  100%{
+    letter-spacing: 2px;
+  }
+}

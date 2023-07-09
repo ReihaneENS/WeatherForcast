@@ -1,0 +1,55 @@
+.home-wrapper {
+  background: url('~/src/assets/image/bg1.jpg') rgba(0, 0, 0, 0.60);
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .inner {
+    button {
+      background-color: var(--color-second);
+    }
+    .search{
+      h1{
+        animation-name: title;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    .loading {
+      animation-name: loading;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+    }
+
+    .card {
+      border-color: var(--color-second);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    .card-err{
+      border-color: red;
+    }
+  }
+}
+
+@keyframes loading {
+ 0%{
+   transform: scale(1);
+ }
+ 50%{
+   transform: scale(1.2);
+ }
+ 100%{
+   transform: scale(1);
+ }
+}
+@keyframes title {
+  0%{
+    letter-spacing: 20px;
+  }
+  100%{
+    letter-spacing: 2px;
+  }
+}
